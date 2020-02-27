@@ -16,21 +16,21 @@
 //Windows
 extern "C"
 {
-#include "libavcodec/avcodec.h"
-#include "libavformat/avformat.h"
-#include "libswresample/swresample.h"
-#include "libavutil/opt.h"
-#include "libavutil/mem.h"
-#include "libavutil/avstring.h"
-#include "libavutil/intreadwrite.h"
-#include "libavutil/parseutils.h"
-#include "libavutil/pixdesc.h"
-#include "libavutil/eval.h"
-#include "libavutil/fifo.h"
-#include "libavutil/time.h"
-#include "libavutil/timestamp.h"
-#include "libavutil/bprint.h"
-#include "SDL.h"
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswresample/swresample.h>
+#include <libavutil/opt.h>
+#include <libavutil/mem.h>
+#include <libavutil/avstring.h>
+#include <libavutil/intreadwrite.h>
+#include <libavutil/parseutils.h>
+#include <libavutil/pixdesc.h>
+#include <libavutil/eval.h>
+#include <libavutil/fifo.h>
+#include <libavutil/time.h>
+#include <libavutil/timestamp.h>
+#include <libavutil/bprint.h>
+#include <SDL2/SDL.h>
 }
 
 #include <stdlib.h>  //使用 _sleep();
@@ -44,18 +44,18 @@ extern "C"
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswresample/swresample.h>
-#include "libavutil/opt.h"
-#include "libavutil/mem.h"
-#include "libavutil/avstring.h"
-#include "libavutil/intreadwrite.h"
-#include "libavutil/parseutils.h"
-#include "libavutil/pixdesc.h"
-#include "libavutil/eval.h"
-#include "libavutil/fifo.h"
-#include "libavutil/time.h"
-#include "libavutil/timestamp.h"
-#include "libavutil/bprint.h"
-#include "SDL.h"
+#include <libavutil/opt.h>
+#include <libavutil/mem.h>
+#include <libavutil/avstring.h>
+#include <libavutil/intreadwrite.h>
+#include <libavutil/parseutils.h>
+#include <libavutil/pixdesc.h>
+#include <libavutil/eval.h>
+#include <libavutil/fifo.h>
+#include <libavutil/time.h>
+#include <libavutil/timestamp.h>
+#include <libavutil/bprint.h>
+#include <SDL2/SDL.h>
 #ifdef __cplusplus
 }
 #include <unistd.h>

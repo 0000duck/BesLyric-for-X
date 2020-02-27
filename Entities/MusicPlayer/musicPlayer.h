@@ -23,10 +23,10 @@
 //Windows
 extern "C"
 {
-#include "libavcodec/avcodec.h"
-#include "libavformat/avformat.h"
-#include "libswresample/swresample.h"
-#include "SDL.h"
+#include <libavcodec/avcodec.h>
+#include <libavformat/avformat.h>
+#include <libswresample/swresample.h>
+#include <SDL2/SDL.h>
 }
 
 #include <stdlib.h>  //使用 _sleep();
@@ -40,7 +40,7 @@ extern "C"
 #include <libavcodec/avcodec.h>
 #include <libavformat/avformat.h>
 #include <libswresample/swresample.h>
-#include "SDL.h"
+#include <SDL2/SDL.h>
 #ifdef __cplusplus
 }
 #include <unistd.h>

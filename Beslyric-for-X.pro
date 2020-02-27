@@ -108,33 +108,33 @@ win32{
 
 #ffmpeg
 
-FFMPEG_INCLUDE  =   C:/lib/beslyric-lib/win32/ffmpeg_4_0_1/include
-FFMPEG_LIB      =   C:/lib/beslyric-lib/win32/ffmpeg_4_0_1/lib
+#FFMPEG_INCLUDE  =   C:/lib/beslyric-lib/win32/ffmpeg_4_0_1/include
+#FFMPEG_LIB      =   C:/lib/beslyric-lib/win32/ffmpeg_4_0_1/lib
 
 #sdl
 
-SDL_INCLUDE     =   C:/lib/beslyric-lib/SDL_2_0_3/include
-SDL_LIB         =   C:/lib/beslyric-lib/SDL_2_0_3/lib
+#SDL_INCLUDE     =   C:/lib/beslyric-lib/SDL_2_0_3/include
+#SDL_LIB         =   C:/lib/beslyric-lib/SDL_2_0_3/lib
 
 
-#other
-#OTHER_INCLUDE   =   C:/lib/beslyric-lib/win32/include
+##other
+##OTHER_INCLUDE   =   C:/lib/beslyric-lib/win32/include
 
-INCLUDEPATH +=  $$FFMPEG_INCLUDE \
-                $$SDL_INCLUDE \
-                $$OTHER_INCLUDE \
+#INCLUDEPATH +=  $$FFMPEG_INCLUDE \
+#                $$SDL_INCLUDE \
+#                $$OTHER_INCLUDE \
 
-LIBS += -L$$FFMPEG_LIB/ -lavcodec\
-        -L$$FFMPEG_LIB/ -lavdevice \
-        -L$$FFMPEG_LIB/ -lavfilter \
-        -L$$FFMPEG_LIB/ -lavutil \
-        -L$$FFMPEG_LIB/ -lavformat \
-        -L$$FFMPEG_LIB/ -lpostproc \
-        -L$$FFMPEG_LIB/ -lswresample \
-        -L$$FFMPEG_LIB/ -lswscale \
-        -L$$FFMPEG_LIB/ -lswresample \
-#        -L$$SDL_LIB/ -lSDL2main  \
-        -L$$SDL_LIB/ -lSDL2
+#LIBS += -L$$FFMPEG_LIB/ -lavcodec\
+#        -L$$FFMPEG_LIB/ -lavdevice \
+#        -L$$FFMPEG_LIB/ -lavfilter \
+#        -L$$FFMPEG_LIB/ -lavutil \
+#        -L$$FFMPEG_LIB/ -lavformat \
+#        -L$$FFMPEG_LIB/ -lpostproc \
+#        -L$$FFMPEG_LIB/ -lswresample \
+#        -L$$FFMPEG_LIB/ -lswscale \
+#        -L$$FFMPEG_LIB/ -lswresample \
+##        -L$$SDL_LIB/ -lSDL2main  \
+#        -L$$SDL_LIB/ -lSDL2
 }
 
 
@@ -147,26 +147,26 @@ QMAKE_CXXFLAGS += -Wno-deprecated-declarations
 #   具体使用步骤，可参看项目： https://github.com/BensonLaur/beslyric-lib
 
 # ffmpeg
-FFMPEG_INCLUDE  = /usr/local/include
-FFMPEG_LIB      = /usr/local/lib
+#FFMPEG_INCLUDE  = /usr/local/include
+#FFMPEG_LIB      = /usr/local/lib
 
 #sdl
-SDL_INCLUDE     = /usr/local/beslyric-lib/SDL_2_0_3/include
-SDL_LIB         = /usr/local/beslyric-lib/SDL_2_0_3/lib
+#SDL_INCLUDE     = /usr/local/beslyric-lib/SDL_2_0_3/include
+#SDL_LIB         = /usr/local/beslyric-lib/SDL_2_0_3/lib
 
-INCLUDEPATH +=  $$FFMPEG_INCLUDE \
-                $$SDL_INCLUDE \
+#INCLUDEPATH +=  $$FFMPEG_INCLUDE \
+#                $$SDL_INCLUDE \
 
-LIBS += $$FFMPEG_LIB/libavcodec.so      \
-        $$FFMPEG_LIB/libavdevice.so     \
-        $$FFMPEG_LIB/libavfilter.so     \
-        $$FFMPEG_LIB/libavformat.so     \
-        $$FFMPEG_LIB/libavutil.so       \
-        $$FFMPEG_LIB/libswresample.so   \
-        $$FFMPEG_LIB/libswscale.so      \
-        #$$FFMPEG_LIB/libpostproc.so    \
-#        -L$$SDL_LIB/ -lSDL2main        \   #can't be $$PSDL_LIB/ -lSDL2main, must be -L$$PSDL_LIB/ -lSDL2main
-        -L$$SDL_LIB/ -lSDL2
+#LIBS += $$FFMPEG_LIB/libavcodec.so      \
+#        $$FFMPEG_LIB/libavdevice.so     \
+#        $$FFMPEG_LIB/libavfilter.so     \
+#        $$FFMPEG_LIB/libavformat.so     \
+#        $$FFMPEG_LIB/libavutil.so       \
+#        $$FFMPEG_LIB/libswresample.so   \
+#        $$FFMPEG_LIB/libswscale.so      \
+#        #$$FFMPEG_LIB/libpostproc.so    \
+##        -L$$SDL_LIB/ -lSDL2main        \   #can't be $$PSDL_LIB/ -lSDL2main, must be -L$$PSDL_LIB/ -lSDL2main
+#        -L$$SDL_LIB/ -lSDL2
 }
 
 
@@ -175,25 +175,81 @@ macx{
 #   具体使用步骤，可参看项目： https://github.com/BensonLaur/beslyic-lib
 
 # ffmpeg
-FFMPEG_INCLUDE  = /usr/local/include
-FFMPEG_LIB      = /usr/local/lib
+#FFMPEG_INCLUDE  = /usr/local/include
+#FFMPEG_LIB      = /usr/local/lib
 
 #sdl
-SDL_INCLUDE     = /usr/local/include/SDL2
-SDL_LIB         = /usr/local/lib
+#SDL_INCLUDE     = /usr/local/include/SDL2
+#SDL_LIB         = /usr/local/lib
 
-INCLUDEPATH +=  $$FFMPEG_INCLUDE \
-                $$SDL_INCLUDE \
+#INCLUDEPATH +=  $$FFMPEG_INCLUDE \
+#                $$SDL_INCLUDE \
 
-LIBS += -L$$FFMPEG_LIB/ -lavcodec      \
-        -L$$FFMPEG_LIB/ -lavdevice     \
-        -L$$FFMPEG_LIB/ -lavfilter     \
-        -L$$FFMPEG_LIB/ -lavformat     \
-        -L$$FFMPEG_LIB/ -lavutil       \
-        -L$$FFMPEG_LIB/ -lswresample   \
-        -L$$FFMPEG_LIB/ -lswscale   \
-#        -L$$SDL_LIB/ -lSDL2main        \
-        -L$$SDL_LIB/ -lSDL2
+#LIBS += -L$$FFMPEG_LIB/ -lavcodec      \
+#        -L$$FFMPEG_LIB/ -lavdevice     \
+#        -L$$FFMPEG_LIB/ -lavfilter     \
+#        -L$$FFMPEG_LIB/ -lavformat     \
+#        -L$$FFMPEG_LIB/ -lavutil       \
+#        -L$$FFMPEG_LIB/ -lswresample   \
+#        -L$$FFMPEG_LIB/ -lswscale   \
+##        -L$$SDL_LIB/ -lSDL2main        \
+#        -L$$SDL_LIB/ -lSDL2
 
 }
+
+#--------------------------------
+
+win32|macx{
+    B4X_LIB_PATH = $$getenv(B4X_LIB_PATH)
+
+    isEmpty(B4X_LIB_PATH){
+        error("env \"B4X_LIB_PATH\" is NOT set.")
+    }
+
+    # Test the existence.
+    !exists($$B4X_LIB_PATH){
+        error("\"$${B4X_LIB_PATH}\" is NOT existed.")
+    }
+
+    INCLUDEPATH *= $${B4X_LIB_PATH}/include
+    message("Added \"$${B4X_LIB_PATH}\" to \"INCLUDEPATH\".")
+}
+
+win32{
+    # Distinguish the architectures of Windows platform.
+    message(QT_ARCH = $$QT_ARCH)
+    equals(QT_ARCH, i386){
+        B4X_LIB_PATH = $$B4X_LIB_PATH/win32
+    }else:equals(QT_ARCH, x86_64){
+        B4X_LIB_PATH = $$B4X_LIB_PATH/win64
+    }
+    ### Don't use QMAKE_HOST.arch in Qt 5.
+
+    # Test the existence again.
+    !exists($$B4X_LIB_PATH){
+        error("\"$${B4X_LIB_PATH}\" is NOT existed.")
+    }
+}
+
+win32|macx{
+    LIBS *= -L$${B4X_LIB_PATH}/lib
+    message("Added \"$${B4X_LIB_PATH}\" to \"LIBS\".")
+}
+
+!macx:unix{
+    # It's not needed.
+}
+
+LIBS *= -lavcodec \
+        -lavdevice \
+        -lavfilter \
+        -lavformat \
+        -lavutil \
+        -lpostproc \
+        -lswresample \
+        -lswscale \
+        -lSDL2
+
+message(INCLUDEPATH = $$INCLUDEPATH)
+message(LIBS = $$LIBS)
 
